@@ -28,10 +28,10 @@ along with Restore Project Plugin. If not, see https://www.gnu.org/licenses/gpl-
 Register custom post types
 */
 require_once plugin_dir_path(__FILE__) . 'includes/gathering_posttype.php';
-require_once plugin_dir_path(__FILE__) . 'includes/home_posttype.php';
+//require_once plugin_dir_path(__FILE__) . 'includes/home_posttype.php';
 require_once plugin_dir_path(__FILE__) . 'includes/venue_posttype.php';
 register_activation_hook(__FILE__, 'restoreproject_gathering_rewrite_flush');
-register_activation_hook(__FILE__, 'restoreproject_home_rewrite_flush');
+//register_activation_hook(__FILE__, 'restoreproject_home_rewrite_flush');
 register_activation_hook(__FILE__, 'restoreproject_venue_rewrite_flush');
 
 /*
